@@ -3,7 +3,7 @@
 	brite.registerView("MainView",{parent:"body"}, {
 
 		create: function(){
-			return render("MainView");
+			return render("MainView",{userName:user.displayName});
 		}, 
 
 		init: function(){
@@ -37,5 +37,6 @@
 		}
 
 	});
+	
 
 })();

@@ -8,15 +8,20 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>ProjectMVC: TaskManager</title>
-
+	
 	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css" />
 	[@webBundle path="/common/js/" type="js" /]
 
 	<script src="/bootstrap/js/bootstrap.min.js"></script>
 	[@webBundle path="/js/" type="js" /]
 
+	<script type="text/javascript">
+		var user = {displayName:"${_r.user.displayName}"};
+	</script>
 	[@webBundle path="/css/" type="css" /]
 
+	
+	
 </head>
 
 <body>
