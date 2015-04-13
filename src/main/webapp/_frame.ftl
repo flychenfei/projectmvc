@@ -10,9 +10,9 @@
 	<title>ProjectMVC: TaskManager</title>
 
 	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css" />
-
 	[@webBundle path="/common/js/" type="js" /]
 
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
 	[@webBundle path="/js/" type="js" /]
 
 	[@webBundle path="/css/" type="css" /]
