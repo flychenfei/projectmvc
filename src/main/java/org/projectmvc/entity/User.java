@@ -8,6 +8,8 @@ public class User extends BaseEntity<Long> {
 	private String firstName;
 	private String lastName;
 	private String photoUrl;
+	private String sex;
+	private int age;
 	
 	// denote if it is an admin user
 	private Boolean admin = false;
@@ -79,6 +81,27 @@ public class User extends BaseEntity<Long> {
 	public void setAdmin(Boolean admin) {
 		this.admin = admin;
 	}
+
+	public String getSex()
+	{
+		return sex;
+	}
+
+	public void setSex(String sex)
+	{
+		this.sex = sex;
+	}
+
+	public int getAge()
+	{
+		return age;
+	}
+
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
 	
 	
 	// --------- /Persistent Properties --------- //

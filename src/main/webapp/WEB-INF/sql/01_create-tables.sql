@@ -8,6 +8,8 @@ CREATE TABLE "user"
 	username character varying(128),
 	"fullName" character varying(128),
 	pwd character varying(256),
+	age integer,
+  	sex character varying(20),
 	CONSTRAINT user_pkey PRIMARY KEY (id)
 );
 create index on "user" (username);

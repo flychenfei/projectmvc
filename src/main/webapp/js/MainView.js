@@ -15,6 +15,28 @@
 		postDisplay: function(){
 			var view = this;
 			view.$contentPanel = view.$el.find(".MainView-contentPanel");
+			
+			
+			$(function(){
+				$.ajax('/das-list-user',{
+					type : 'get',
+					async:false,
+					success : function(data){
+						
+						
+						$(data.result).each(function(){
+							
+							$(".table tbody").append(
+									$("<tr class='info'><td>"+this.id+"</td><td>"+this.username+"</td><td>"+this.age+"</td><td>"+this.sex+"</td></tr>")
+							);
+						});
+						
+					},
+					
+				});
+				
+			});
+			
 		}, 
 
 		docEvents: {
@@ -37,6 +59,8 @@
 		}
 
 	});
+	
+	
 	
 
 })();
